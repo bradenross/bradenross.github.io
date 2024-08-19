@@ -1,204 +1,21 @@
-<header>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #e0e0e09f;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            width: 100%;
-            position: fixed;
-            padding: 10;
-        }
-
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            margin: 0px 15px;
-            border-radius: 11px;
-            background: #40358e;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 600;
-            color: #fff;
-        }
-
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            border-radius: 11px;
-            background: #03003b;
-            color: #fff;
-        }
-
-        /* Add a color to the active/current link */
-        .topnav a.active {
-            border-radius: 11px;
-            background: #e0e0e0;
-            color: white;
-        }
-
-        .welcome-page {
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-image: url("bluebonnets.png");
-            height: 100vh;
-            vertical-align: middle;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .myMoji {
-            width: 300px;
-            height: 300px;
-        }
-
-        .welcome-page h1 {
-            color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 50px;
-            padding: 0px 10px;
-            background-color: #40358e;
-            border-radius: 10px;
-        }
-
-        .welcome-page p1 {
-            color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 25px;
-            padding: 0px 10px;
-            background-color: #40358e;
-            border-radius: 10px;
-        }
-
-        .welcome-page-ios {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            color: #000000;
-            padding: 5px 15px;
-            background-color: #ffffff;
-            border-radius: 10px;
-        }
-
-        .welcome-page-android {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: #000;
-            padding: 5px 15px;
-            background-color: #3DDC84;
-            border-radius: 10px;
-        }
-
-        .welcome-page-main {
-            display: flex;
-            flex-direction: row;
-            vertical-align: middle;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .linkedin-button {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-image: url('linkedin.png');
-            background-size: cover;
-            background-position: center;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .about-page {
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            background-color: #40358e;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .about-page h1 {
-            margin: 0px 0px 20px 0px;
-            padding: 0;
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 50px;
-        }
-
-        .about-page p1 {
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            width: 30%;
-            text-align: justify;
-            line-height: 1.5;
-        }
-
-        .experience-title {
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 30px;
-        }
-
-        .experience-subtitle {}
-
-        .experience-description {
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-        }
-
-        .page {
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            background-color: #40358e;
-        }
-
-        .page h1 {
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        .page p1 {
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    </style>
-</header>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
-    <div class="topnav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
+    <div class="navbar">
+        <a class="navbar-name" href="#home">Braden Ross</a>
+        <div class="topnav">
+            <a href="https://www.linkedin.com/in/braden-ross/" target="_blank" class="linkedin-button"></a>
+            <a href="https://github.com/bradenross" target="_blank" class="github-button"></a>
+            <a href="#home" class="topnav-button">Home</a>
+            <a href="#about" class="topnav-button">About</a>
+            <a href="#experience" class="topnav-button">Experience</a>
+            <a href="#contact" class="topnav-button">Contact</a>
+        </div>
     </div>
     <div class="main">
-        <div class="welcome-page">
+        <div class="welcome-page" id="home">
             <div class="welcome-page-main">
                 <h2 class="welcome-page-ios">
                     iOS
@@ -215,13 +32,11 @@
             <p1>
                 Software Developer, Texas Tech Red Raider, and dog owner.
             </p1>
-            <a href="https://www.linkedin.com/in/braden-ross/" target="_blank" class="linkedin-button"></a>
         </div>
-        <div class="about-page">
+        <div class="about-page" id="about">
             <h1>
                 About Me
             </h1>
-
             <p1>
                 I am a software developer born and raised in Austin, TX. I spent 4 years in Lubbock, TX getting my
                 Computer
@@ -230,48 +45,87 @@
                 the best developer I can be!
             </p1>
         </div>
-        <div class="page">
-            <h1>
+        <div class="experience-page" id="experience">
+            <h1 class="experience-title">
                 Experience
             </h1>
-            <h2>
+            <h2 class="experience-subtitle">
                 Work
             </h2>
-            <h3 class="experience-title">
-                General Motors
-                Mobile Developer
-                May 2022 - May 2023
-            </h3>
-            <p1 class="experience-description">
-                Worked on the General Motors MyGM mobile applications using React Native, Swift, Obj-C, and Java
-            </p1>
-            <h3 class="experience-title">
-                General Motors
-                Software Developer
-                May 2023 - Now
-            </h3>
+            <div class="work-header">
+                <h3 class="work-head-employer">
+                    General Motors
+                </h3>
+                <h3 class="work-head-role">
+                    Software Developer
+                </h3>
+                <h3 class="work-head-dates">
+                    May 2023 - August 2024
+                </h3>
+            </div>
             <p1 class="experience-description">
                 Worked on GM's infotainment system inside the vehicles using Kotlin.
+            </p1>
+            <div class="work-header">
+                <h3 class="work-head-employer">
+                    General Motors
+                </h3>
+                <h3 class="work-head-role">
+                    Mobile Developer
+                </h3>
+                <h3 class="work-head-dates">
+                    May 2022 - May 2023
+                </h3>
+            </div>
+            <p1 class="experience-description">
+                Worked on the General Motors MyGM mobile applications using React Native, Swift, Obj-C, and Java
             </p1>
             <h2>
                 Personal Projects
             </h2>
-            <h2 class="experience-title">
-                WordFall
-            </h2>
-            <p1 class="experience-description">
-                The WordFall mobile game is a word and physics based mobile game that I started in May of 2019 in order
-                to learn the programming language Swift. The game not only provided me with the ability to learn swift,
-                but also helped me learn Google AdMob and improve upon my object oriented programming skills.
-                Since it is swift based, it is only available to iOS devices and can be found at:
-                https://apps.apple.com/tt/app/wordfall-falling-letters/id1470002865
-            </p1>
-            <h2 class="experience-title">
+            <div class="wordfall">
+                <div>
+                    <h2>
+                        WordFall
+                    </h2>
+                    <p1>
+                        The WordFall mobile game is a word and physics based mobile game that I started in May of 2019
+                        in
+                        order
+                        to learn the programming language Swift. The game not only provided me with the ability to learn
+                        swift,
+                        but also helped me learn Google AdMob and improve upon my object oriented programming skills.
+                        Since it is swift based, it is only available to iOS devices and can be found
+
+                        <a href="https://apps.apple.com/tt/app/wordfall-falling-letters/id1470002865"
+                            target="_blank">here</a>
+                    </p1>
+                </div>
+                <img src="wordfallLogo.PNG" class="myMoji">
+            </div>
+            <h2 class="experience-subtitle">
                 Christmas Countdown
             </h2>
             <p1 class="experience-description">
                 An iOS based mobile app that has a countdown that counts down the time left until Christmas, royalty
-                free music, custom Christmas lists, and Bible verses for the users to enjoy.
+                free music, custom Christmas lists, and Bible verses for the users to enjoy. Can be found
+                <a href="https://apps.apple.com/us/app/christmas-countdown/id6584518026" target="_blank">here</a>
+            </p1>
+        </div>
+        <div class="contact-page" id="contact">
+            <h1>
+                Contact Me!
+            </h1>
+            <div>
+                <p1>
+                    Email: Bradenhross@gmail.com
+                </p1>
+                <a href="https://www.linkedin.com/in/braden-ross/" target="_blank" class="linkedin-button"></a>
+                <a href="https://www.linkedin.com/in/braden-ross/" target="_blank">LinkedIn:
+                    https://www.linkedin.com/in/braden-ross/</a>
+            </div>
+            <p1>
+                Designed and created by Braden Ross
             </p1>
         </div>
     </div>
