@@ -179,28 +179,70 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0;
-    height: 100vh;
-}
-
-.wordfall {
-    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
 }
 
-.wordfall h2 {
+.project-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.project-header-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.project-logo {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: -3px 3px #000000a4;
+}
+
+.project-name {
+    margin: 0;
+    padding: 0;
     color: #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.wordfall p1 {
+.project-role {
+    margin: 0;
+    padding: 0;
     color: #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    text-align: justify;
+    font-weight: 500;
+}
+
+.project-dates {
+    margin: 0;
+    padding: 0;
+    color: #777;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.project-description {
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 .work-header {
@@ -240,12 +282,16 @@ body {
     color: #40358e;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
+    text-decoration: underline;
 }
 
 .experience-subtitle {
     color: #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
 }
 
 .experience-description {
@@ -254,12 +300,73 @@ body {
     font-size: 20px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.skills-header {
+    color: #40358e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.skills-columns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+
+.skills-subtitle {
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.skills-items {
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
 .contact-page {
     padding: 0;
     margin: 0;
+    padding-bottom: 10px;
     background-color: #40358e;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page-title {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-page-links {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-page-links-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.contact-page-linkedin-div {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
